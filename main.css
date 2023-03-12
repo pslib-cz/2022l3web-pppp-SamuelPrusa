@@ -54,3 +54,62 @@
   : "basic-font";
   }
   
+.tablet-funkce {
+align-items: flex-end;
+background-color: var(--white);
+border: 1px none;
+display: flex;
+flex-direction: column;
+height: 1409px;
+overflow: hidden;
+padding: 31px 0;
+width: 834px;
+}
+
+.vyrobilo-b-interactive {
+    color: var(--barvasvtle-modr);
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 96.26px;
+    margin-top: 55px;
+    min-height: 14px;
+    text-align: right;
+    width: 135px;
+  }
+  
+  .flex-row-4 {
+    align-items: flex-end;
+    align-self: center;
+    display: flex;
+    height: 273px;
+    justify-content: flex-end;
+    margin-right: 42.72px;
+    margin-top: 80px;
+    min-width: 693px;
+  }
+  
+  .overlap-group2 {
+    height: 405px;
+    margin-bottom: -132px;
+    position: relative;
+    width: 835px;
+  }
+  
+  .overlap-group {
+    align-items: flex-start;
+    background-color: var(--barvatmav-modr);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    min-height: 405px;
+    padding: 57px 28px;
+    position: absolute;
+    top: 0;
+    width: 835px;
+  }
+  
+  .rectangle-20 {
+    height: 11px;
+    margin-top: 52px;
+    width: 765px;
+  }
