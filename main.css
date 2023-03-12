@@ -6,3 +6,51 @@
   }
   
   @import url("https://fonts.googleapis.com/css?family=Abel:400");
+
+  :root {
+    --black
+  : rgba(0, 0, 0, 1);
+    --barvatmav-modr
+  : rgba(22, 33, 60, 1);
+    --astronaut
+  : rgba(44, 65, 116, 1);
+    --barvasvtle-modr
+  : rgba(142, 202, 230, 1);
+    --alto
+  : rgba(217, 217, 217, 1);
+    --barvaoranov
+  : rgba(245, 132, 31, 1);
+    --white
+  : rgba(255, 255, 255, 1);
+  
+    --font-size-s
+  : 12px;
+    --font-size-m
+  : 14px;
+    --font-size-l
+  : 15px;
+    --font-size-xxl
+  : 18px;
+    --font-size-xxxl
+  : 25px;
+    --font-size-xxxxl
+  : 30px;
+    --font-size-xl2
+  : 16px;
+    --font-size-xxl2
+  : 17px;
+    --font-size-19px
+  : 19px;
+    --font-size-27px
+  : 27px;
+    --font-size-33px
+  : 33px;
+    --font-size-xxxl2
+  : 20px;
+  
+  --font-family-basic-font
+  : "basic-font";
+  --font-family-basic-font-regular
+  : "basic-font";
+  }
+  
