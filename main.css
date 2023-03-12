@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "basic-font";
+    font-style:italic;
+    font-weight: 400;
+    src: url("./Actor-Regular.ttf") format("truetype");
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Abel:400");
