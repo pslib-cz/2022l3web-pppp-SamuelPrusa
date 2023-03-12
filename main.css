@@ -54,17 +54,17 @@
   : "basic-font";
   }
   
-.tablet-funkce {
-align-items: flex-end;
-background-color: var(--white);
-border: 1px none;
-display: flex;
-flex-direction: column;
-height: 1409px;
-overflow: hidden;
-padding: 31px 0;
-width: 834px;
-}
+  .tablet-funkce {
+    align-items: flex-end;
+    background-color: var(--white);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 1409px;
+    overflow: hidden;
+    padding: 31px 0;
+    width: 834px;
+  }
 
 .vyrobilo-b-interactive {
     color: var(--barvasvtle-modr);
