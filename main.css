@@ -113,3 +113,52 @@
     margin-top: 52px;
     width: 765px;
   }
+
+  .podpora-1 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 0.04px;
+    min-height: 20px;
+    width: 71px;
+  }
+  
+  .pihlen-k-tu-k {
+    color: var(--barvasvtle-modr);
+    font-weight: 400;
+    line-height: normal;
+    min-height: 124px;
+    width: 117px;
+  }
+  
+  .copyright-2023-p {
+    color: var(--barvasvtle-modr);
+    font-family: var(--font-family-basic-font);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 37px;
+    margin-top: 25px;
+    min-height: 17px;
+    width: 335px;
+  }
+  
+  .group-52 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    left: 688px;
+    min-height: 134px;
+    position: absolute;
+    top: 83px;
+    width: 54px;
+  }
+  
+  .vod-funkce-podpora-cenk-kontakt {
+    color: var(--barvasvtle-modr);
+    font-weight: 400;
+    line-height: normal;
+    min-height: 102px;
+    width: 50px;
+  }
