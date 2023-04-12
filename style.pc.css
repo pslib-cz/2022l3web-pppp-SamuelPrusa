@@ -704,3 +704,20 @@ footer {
 .contact-item:nth-child(even) {
   color: var(--primary-color);
 }
+
+.function-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  padding-inline: 10%;
+  font-family: var(--primary-font);
+  color: var(--deep-blue);
+}
+
+.function-list-title {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
