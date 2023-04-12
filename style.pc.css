@@ -693,3 +693,14 @@ footer {
   padding: 1rem;
   border-radius: 10px;
 }
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.contact-item:nth-child(even) {
+  color: var(--primary-color);
+}
