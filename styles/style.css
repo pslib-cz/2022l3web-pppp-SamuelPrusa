@@ -219,7 +219,8 @@ nav {
 .features-title,
 .story-title,
 .references-title,
-.news-title {
+.news-title,
+.page-title {
   font-size: 36px;
   margin-top: 5rem;
 }
@@ -782,4 +783,93 @@ footer {
   text-overflow: ellipsis;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.function-card::after {
+  content: "➜";
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  display: none;
+}
+
+.function-card:hover::after {
+  display: block;
+}
+
+.function-card:hover {
+  box-shadow: 0 0 10px 0 var(--primary-color);
+}
+
+.function-card:hover .function-card-title {
+  color: var(--primary-color);
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding-inline: 10%;
+  font-family: var(--primary-font);
+  color: var(--deep-blue);
+}
+
+.questions-title {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.questions-text {
+  width: 750px;
+  text-align: center;
+}
+
+.questions-or {
+  margin: -2rem;
+}
+
+.questions-email,
+.questions-tel {
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  border: 2.5px solid var(--primary-color);
+}
+
+.questions-email {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.questions-tel {
+  background-color: var(--white);
+  color: var(--deep-blue);
+  border: 2.5px solid var(--primary-color);
+}
+
+.questions-email:hover {
+  background-color: var(--white);
+  color: var(--deep-blue);
+}
+
+.questions-tel:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.mobile {
+  display: none;
 }
