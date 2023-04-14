@@ -1118,9 +1118,11 @@ footer {
 
   .hamburger {
     display: block;
-    width: fit-content;
-    height: fit-content;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
+    z-index: 2;
+    position: relative;
   }
 
   .hamburger-line {
@@ -1128,8 +1130,33 @@ footer {
     width: 40px;
     height: 4px;
     background-color: var(--primary-color);
-    margin: 7.5px 0;
     border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-line:nth-child(2) {
+    top: 50%;
+  }
+
+  .hamburger-line:nth-child(3) {
+    top: 100%;
+  }
+
+  .open .hamburger-line:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .hamburger-line:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
   }
 
   .hamburger-nav {
@@ -1139,7 +1166,7 @@ footer {
     justify-content: start;
     background-color: var(--white);
     position: fixed;
-    padding-top: 5rem;
+    padding-top: 3.5rem;
     inset: 0;
     z-index: 1;
     margin: 0;
@@ -1147,36 +1174,6 @@ footer {
 
   #hamburger:checked ~ .hamburger-nav {
     display: flex;
-  }
-
-  .close-hamburber {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: fit-content;
-    padding: 1rem;
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 2.5rem;
-  }
-
-  .close-hamburber-line {
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background-color: var(--primary-color);
-    border-radius: 2px;
-    transform-origin: center;
-    left: 0;
-  }
-
-  .close-hamburber-line:nth-child(1) {
-    transform: rotate(45deg);
-  }
-
-  .close-hamburber-line:nth-child(2) {
-    transform: rotate(-45deg);
   }
 
   .nav-links {
@@ -1191,5 +1188,34 @@ footer {
 
   .user-bar {
     width: 100%;
+  }
+}
+
+@keyframes hamburgerLine1 {
+  50% {
+    position: absolute;
+    top: 0;
+  }
+
+  100% {
+    top: 11px;
+    transform-origin: center;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes hamburgerLine2 {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hamburgerLine3 {
+  50% {
+    transform: translateY(-11px);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(-45deg);
   }
 }
