@@ -1239,4 +1239,18 @@ footer {
     width: fit-content;
     gap: 0.5rem;
   }
+
+  .news-container {
+    justify-content: space-evenly;
+  }
+
+  .news-card {
+    width: 40%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .news-date {
+    display: none;
+  }
 }
