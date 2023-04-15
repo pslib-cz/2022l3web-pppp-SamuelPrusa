@@ -203,6 +203,8 @@ nav {
   align-items: center;
   height: 7.5rem;
   gap: 5rem;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .features {
@@ -924,8 +926,6 @@ footer {
   }
 
   .partners {
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: space-evenly;
     height: fit-content;
@@ -1191,31 +1191,52 @@ footer {
   }
 }
 
-@keyframes hamburgerLine1 {
-  50% {
-    position: absolute;
-    top: 0;
+@media screen and (max-width: 1024px) {
+  section {
+    background-color: var(--white) !important;
   }
 
-  100% {
-    top: 11px;
-    transform-origin: center;
-    transform: rotate(45deg);
+  hr {
+    display: none;
   }
-}
 
-@keyframes hamburgerLine2 {
-  100% {
-    opacity: 0;
+  footer {
+    padding-inline: 10%;
   }
-}
 
-@keyframes hamburgerLine3 {
-  50% {
-    transform: translateY(-11px);
+  .story {
+    padding-inline: 5%;
   }
-  100% {
-    transform-origin: center;
-    transform: rotate(-45deg);
+
+  .card {
+    width: 175px;
+    height: 150px;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+  }
+
+  .features-container {
+    width: auto;
+  }
+
+  .feature-divider {
+    display: none;
+  }
+
+  .partners {
+    gap: 1rem;
+  }
+
+  .person-cards {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: fit-content;
+    gap: 0.5rem;
   }
 }
